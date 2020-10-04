@@ -17,3 +17,14 @@ text = "LOOPS: 100"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sustain" type="Label" parent="."]
+visible = false
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 84.0
+margin_bottom = 14.0
+text = "SUSTAIN: OFF"
+__meta__ = {
+"_edit_use_anchors_": false
+}

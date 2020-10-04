@@ -45,7 +45,7 @@ color_ramp = SubResource( 3 )
 
 [node name="Particles" type="Particles" parent="."]
 material_override = SubResource( 1 )
-amount = 20
+amount = 30
 explosiveness = 0.95
 process_material = SubResource( 6 )
 draw_pass_1 = SubResource( 7 )

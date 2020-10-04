@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://IndieFlower-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+extra_spacing_top = 2
+font_data = ExtResource( 2 )
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -15,10 +25,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -50.0
-margin_top = -10.0
-margin_right = 50.0
-margin_bottom = 10.0
+margin_left = -54.7928
+margin_top = 104.23
+margin_right = 45.2072
+margin_bottom = 124.23
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -29,10 +39,32 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -50.2466
-margin_top = 25.0146
-margin_right = 49.7534
-margin_bottom = 45.0146
+margin_left = -55.0395
+margin_top = 139.244
+margin_right = 44.9606
+margin_bottom = 159.244
 text = "Quit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -275.0
+margin_right = 275.0
+margin_bottom = 250.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.427451, 0.878431, 1, 1 )
+text = "Last Song"
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -319.5
+margin_top = 220.0
+margin_right = 471.5
+margin_bottom = 472.0
+custom_fonts/font = SubResource( 2 )
+text = "Compose your final song as you fall from the sky.
+Each shape is an instrument and each color is a note.
+Use WSAD to move into a shape and play a note."
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

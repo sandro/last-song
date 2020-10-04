@@ -10,6 +10,7 @@ var sustainStartTime = 0
 var sustainEndTime = 0
 var sustainTime = 0
 var sustainPlayer
+onready var sustainLabel = get_node("/root/World/HUD/Sustain")
 onready var streamLength = $AudioStreamPlayer.stream.get_length()
 onready var particles = preload("res://Explosion.tscn")
 
@@ -23,7 +24,12 @@ func _process(delta):
 		sustaining = true
 		sustainStartTime = currentTime
 		setupSustain()
-	if Input.is_action_just_released("click") and sustaining:
+		sustainLabel.text = "SUSTAIN ON"
+		sustainLabel.set("custom_colors/font_color", Color("#19ff96"))
+	elif Input.is_action_just_pressed("click") and sustaining:
+		print("just pressed sustain off")
+		sustainLabel.text = "SUSTAIN: OFF"
+		sustainLabel.set("custom_colors/font_color", Color(1,1,1))
 		print("sustain time", sustainTime)
 		sustainEndTime = currentTime
 		stopSustain()
@@ -49,6 +55,8 @@ func stopSustain():
 	if sustaining:
 		emit_signal("sustained", self, sustainStartTime, sustainEndTime)
 	sustaining = false
+	sustainLabel.text = "SUSTAIN: OFF"
+	sustainLabel.set("custom_colors/font_color", Color(1,1,1))
 	
 func sustain():
 	var currentPosition = $AudioStreamPlayer.get_playback_position()

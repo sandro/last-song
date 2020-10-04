@@ -2,7 +2,7 @@ extends KinematicBody
 
 var gravity = Vector3.DOWN * 1  # strength of gravity
 
-var speed = 4  # movement speed
+var speed = 8  # movement speed
 var jump_speed = 6  # jump strength
 var spin = 0.1  # rotation speed
 var velocity = Vector3()
@@ -15,6 +15,7 @@ var currentPlaybackIndex = 0
 var loops = 0
 
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	updateHudLoops()
 	origin = translation
 	for c in get_parent().get_children():
@@ -67,6 +68,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("escape"):
 		get_tree().paused = true
 		$"../CanvasLayer/Menu".show()
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _physics_process(delta):
 #	velocity += gravity * delta
@@ -119,7 +121,6 @@ class ReplayItem:
 		if t > replayAt and !played and currentLoop != loopOrigin:
 			node.playYourself()
 			played = true
-		print("have sustain", sustainStartTime)
 		if sustainStartTime:
 			if t >= sustainStartTime and !sustainStarted:
 				node.startReplaySustain()

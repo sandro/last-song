@@ -6,6 +6,7 @@
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -81,6 +82,9 @@ max_value = 4.0
 value = 4.0
 tick_count = 5
 ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
 [connection signal="pressed" from="Start Over" to="." method="_on_Start_Over_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
