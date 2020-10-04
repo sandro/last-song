@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ClaB2.wav-3779fe4ce8ea950d05eb304cf6ef7528.sample"
+
+[deps]
+
+source_file="res://Sound/ClaB2.wav"
+dest_files=[ "res://.import/ClaB2.wav-3779fe4ce8ea950d05eb304cf6ef7528.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

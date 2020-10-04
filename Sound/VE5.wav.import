@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/VE5.wav-a2ddccd79b42e66ee6dc0ce254b00934.sample"
+
+[deps]
+
+source_file="res://Sound/VE5.wav"
+dest_files=[ "res://.import/VE5.wav-a2ddccd79b42e66ee6dc0ce254b00934.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

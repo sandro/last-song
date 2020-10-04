@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/VG52.wav-5e070dc07432f0ccb1dd8d50a36075f9.sample"
+
+[deps]
+
+source_file="res://Sound/VG52.wav"
+dest_files=[ "res://.import/VG52.wav-5e070dc07432f0ccb1dd8d50a36075f9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

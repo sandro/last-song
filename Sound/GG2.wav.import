@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GG2.wav-8b75cb68e92cba1e64075e425ea6a86b.sample"
+
+[deps]
+
+source_file="res://Sound/GG2.wav"
+dest_files=[ "res://.import/GG2.wav-8b75cb68e92cba1e64075e425ea6a86b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
